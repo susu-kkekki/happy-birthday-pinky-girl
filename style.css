@@ -1,0 +1,253 @@
+/* 1. GLOBAL SYSTEM RESETS & BASE THEME */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+.case-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 2. DOSSIER HEADER ELEMENTS */
+.case-header {
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.stamp-urgent {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8B0000;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border: 1px dashed white;
+}
+
+.subtitle {
+    color: #FFCC00;
+    letter-spacing: 1px;
+}
+
+/* 3. OPERATIONS BRIEF PANEL */
+.brief-box {
+    background-color: #222;
+    border-left: 5px solid #FFCC00;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/* 4. SCANNABLE EVIDENCE GRID SYSTEM */
+.evidence-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* 5. EVIDENCE CARD COMPONENTS */
+.evidence-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 20px;
+    border-top: 4px solid #8B0000;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card-status {
+    font-size: 0.75rem;
+    color: #aaa;
+    background-color: #2a2a2a;
+    padding: 3px 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Form inputs & Typography controls */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    color: #fff;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #FFCC00;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #a80000;
+}
+
+/* Verified Core System Override States */
+.card-verified {
+    border-top-color: #006400 !important;
+    background-color: #112211 !important;
+}
+
+.card-verified button {
+    background-color: #006400;
+}
+
+/* 6. DECRYPTED VERDICT DECK (REVEAL) */
+.reveal-section {
+    background-color: #1e1e1e;
+    border: 3px dashed #FFCC00;
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.verdict-stamp {
+    color: #006400;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 3px solid #006400;
+    display: inline-block;
+    padding: 10px 20px;
+    transform: rotate(-3deg);
+    margin-bottom: 20px;
+}
+
+.verdict-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    text-align: left;
+}
+
+/* Suspect Forensic Photo Elements */
+.suspect-photo-frame {
+    background-color: #2a2a2a;
+    border: 2px solid #444;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    max-width: 250px;
+    text-align: center;
+}
+
+.suspect-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border: 1px solid #111;
+    filter: grayscale(20%);
+}
+
+.photo-caption {
+    font-size: 0.75rem;
+    color: #FFCC00;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.message-box {
+    flex: 1;
+    min-width: 280px;
+}
+
+.birthday-msg {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*7. MOBILE RESPONSIVENESS ARCHITECTURE*/
+   
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .case-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .stamp-urgent {
+        position: static;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .evidence-dashboard {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .evidence-card {
+        padding: 15px;
+    }
+
+    .verdict-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .suspect-photo-frame {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .reveal-section {
+        padding: 20px 15px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    button {
+        padding: 12px;
+    }
+}

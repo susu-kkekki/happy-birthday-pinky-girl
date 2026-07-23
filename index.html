@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE FILE: #0804-VUL22</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://fav.farm/⚖️" />
+</head>
+<body>
+
+    <div class="case-container">
+        <header class="case-header">
+            <div class="stamp-urgent">URGENT || CONFIDENTIAL</div>
+            <h1>CASE FILE: #0804-VUL22</h1>
+            <p class="subtitle">PROSECUTOR ASSIGNED: Miss VULANI || TARGET AGE: 22</p>
+        </header>
+
+        <!-- Brief Section -->
+        <section class="brief-box">
+            <h3>🏛️ DEPT OF FORENSICS: CRIME BRIEF</h3>
+            <p><strong>MISSION:</strong> Cross-examine the intercepted intelligence. Review the 3 Evidence Folders below and enter the suspect's known profile coordinates. Verifying all cards will decrypt the <strong>Final Verdict vault</strong>.</p>
+        </section>
+
+        <!-- Main Workspace Grid -->
+        <main class="evidence-dashboard">
+            
+            <!-- CARD 1 -->
+            <div class="evidence-card" id="card1">
+                <div class="card-status" id="status1">📂 STATUS: UNVERIFIED</div>
+                <h2>CARD 01: Alibi & Background</h2>
+                <hr>
+                <div class="form-group">
+                    <label>1. Audio Log: What track was playing in the background?</label>
+                    <input type="text" id="q1" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>2. Timeline Analysis: Morning alibi hour on weekends?</label>
+                    <input type="text" id="q2" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>3. Ration Scan: Fuel substance found at the scene?</label>
+                    <input type="text" id="q3" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>4. Operative Window: Darkness or daylight preference?</label>
+                    <input type="text" id="q4" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>5. Visual ID: Color of primary disguise?</label>
+                    <input type="text" id="q5" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>6. Surveillance Footage: Media distraction consumed?</label>
+                    <input type="text" id="q6" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>7. Flight Risk: Target escape destination?</label>
+                    <input type="text" id="q7" placeholder="Enter answer...">
+                </div>
+                <button onclick="verifyCard1()">Verify Alibi Files</button>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="evidence-card" id="card2">
+                <div class="card-status" id="status2">📂 STATUS: UNVERIFIED</div>
+                <h2>CARD 02: Digital Footprint</h2>
+                <hr>
+                <div class="form-group">
+                    <label>8. Digital Signature: Encryption emoji used?</label>
+                    <input type="text" id="q8" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>9. Modus Operandi: Preferred method for transmitting intel?</label>
+                    <input type="text" id="q9" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>10. Motive Trigger: Specific irritation factor?</label>
+                    <input type="text" id="q10" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>11. Cyber Telemetry: App anchoring mobile activity?</label>
+                    <input type="text" id="q11" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>12. Chemical Profile: Glucose or Sodium compound bias?</label>
+                    <input type="text" id="q12" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>13. Future Targets: Operational capability to acquire?</label>
+                    <input type="text" id="q13" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>14. Climatic Preference: Thrives in what season?</label>
+                    <input type="text" id="q14" placeholder="Enter answer...">
+                </div>
+                <button onclick="verifyCard2()">Verify Telemetry</button>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="evidence-card" id="card3">
+                <div class="card-status" id="status3">📂 STATUS: UNVERIFIED</div>
+                <h2>CARD 03: Forensic Profile</h2>
+                <hr>
+                <div class="form-group">
+                    <label>15. Codebreaker Key: Integer appearing in secure files?</label>
+                    <input type="text" id="q15" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>16. Specialized Training: Early academic discipline?</label>
+                    <input type="text" id="q16" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>17. Terrain Preference: Space or Ocean breach?</label>
+                    <input type="text" id="q17" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>18. Liquid Fuel: Chemical stimulant used daily?</label>
+                    <input type="text" id="q18" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>19. Info Intake: Books or Videos preference?</label>
+                    <input type="text" id="q19" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>20. High-Value Assets: Most prized contraband gift?</label>
+                    <input type="text" id="q20" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>21. Character Witness: Temperament classification?</label>
+                    <input type="text" id="q21" placeholder="Enter answer...">
+                </div>
+                <div class="form-group">
+                    <label>22. The Climax: Action planned for August 4th?</label>
+                    <input type="text" id="q22" placeholder="Enter answer...">
+                </div>
+                <button onclick="verifyCard3()">Verify Forensic Profile</button>
+            </div>
+
+        </main>
+
+        <!-- Final Reveal Vault Container -->
+        <section id="verdictVault" class="reveal-section hidden">
+            <div class="verdict-stamp">CASE CLOSED || GUILTY OF TURNING 22</div>
+            <h2>⚖️ THE FINAL VERDICT</h2>
+            
+            <div class="verdict-content">
+                <!-- Suspect Profile Picture Frame -->
+                <div class="suspect-photo-frame">
+                    <img src="vulani.jpeg" alt="Suspect Profile: Vulani" class="suspect-img">
+                    <div class="photo-caption">SUSPECT ID: #0804-VUL22</div>
+                </div>
+
+                <!-- Birthday Message Text -->
+                <div class="message-box">
+                    <p class="birthday-msg">
+                        Happy 22nd Birthday, Vulani! 🥂<br><br>
+                        You've successfully tracked down all the clues and closed the case. <br><br>
+                        To the smartest girl I know, may your 22nd year be filled with joy, success, and unforgettable adventures. May the LORD give you the wisdom to navigate this new chapter and the courage to chase your dreams.<br><br>
+                        I love you so much, Pinky Girl. 💖
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
